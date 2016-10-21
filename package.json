@@ -1,0 +1,24 @@
+{
+  "name": "stuffed",
+  "version": "0.0.0",
+  "description": "Check if object contains something.",
+  "main": "stuffed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/stuffed.git"
+  },
+  "keywords": [
+    "check",
+    "object",
+    "stuffed"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/stuffed/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/stuffed#readme"
+}

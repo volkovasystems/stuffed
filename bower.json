@@ -1,0 +1,22 @@
+{
+  "name": "stuffed",
+  "description": "Check if object contains something.",
+  "main": "stuffed.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "object",
+    "stuffed"
+  ],
+  "homepage": "https://github.com/volkovasystems/stuffed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
