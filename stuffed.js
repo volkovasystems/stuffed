@@ -44,7 +44,23 @@
 	@module-documentation:
 		Check if object contains something.
 	@end-module-documentation
+
+	@include:
+		{
+			"doubt": "doubt"
+		}
+	@end-include
 */
+
+if( typeof window == "undefined" ){
+	var doubt = require( "doubt" );
+}
+
+if( typeof window != "undefined" &&
+	!( "doubt" in window ) )
+{
+	throw new Error( "doubt is not defined" );
+}
 
 var stuffed = function stuffed( object ){
 	/*;
@@ -55,7 +71,17 @@ var stuffed = function stuffed( object ){
 		@end-meta-configuration
 	*/
 
-	return ( Object.keys( object ).length != 0 &&
+	if( doubt( object ).AS_ARRAY ){
+		throw new Error( "invalid object" );
+	}
+
+	if( typeof object != "object" ){
+		throw new Error( "invalid object" );
+	}
+
+	return ( object !== null &&
+
+		Object.keys( object ).length != 0 &&
 
 		JSON.stringify( object ) != JSON.stringify( { } ) &&
 

@@ -1,5 +1,6 @@
 {
   "name": "stuffed",
+  "version": "0.0.1",
   "description": "Check if object contains something.",
   "main": "stuffed.js",
   "authors": [
@@ -18,5 +19,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "doubt": "^0.0.6"
+  }
 }

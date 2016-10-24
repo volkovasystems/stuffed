@@ -1,6 +1,6 @@
 {
   "name": "stuffed",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check if object contains something.",
   "main": "stuffed.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/volkovasystems/stuffed/issues"
   },
-  "homepage": "https://github.com/volkovasystems/stuffed#readme"
+  "homepage": "https://github.com/volkovasystems/stuffed#readme",
+  "dependencies": {
+    "doubt": "0.0.6"
+  }
 }
