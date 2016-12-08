@@ -1,6 +1,6 @@
 {
   "name": "stuffed",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Check if object contains something.",
   "main": "stuffed.js",
   "authors": [
@@ -21,6 +21,9 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.0.6"
+    "doubt": "^0.4.0",
+    "kount": "^0.0.0",
+    "protype": "^0.4.0",
+    "truly": "^0.3.0"
   }
 }

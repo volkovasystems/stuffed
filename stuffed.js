@@ -47,22 +47,20 @@
 
 	@include:
 		{
-			"doubt": "doubt"
+			"doubt": "doubt",
+			"kount": "kount",
+			"protype": "protype",
+			"truly": "truly"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var doubt = require( "doubt" );
-}
+const doubt = require( "doubt" );
+const kount = require( "kount" );
+const protype = require( "protype" );
+const truly = require( "truly" );
 
-if( typeof window != "undefined" &&
-	!( "doubt" in window ) )
-{
-	throw new Error( "doubt is not defined" );
-}
-
-var stuffed = function stuffed( object ){
+const stuffed = function stuffed( object ){
 	/*;
 		@meta-configuration:
 			{
@@ -71,28 +69,11 @@ var stuffed = function stuffed( object ){
 		@end-meta-configuration
 	*/
 
-	if( doubt( object ).AS_ARRAY ){
+	if( doubt( object ).AS_ARRAY || !protype( object, OBJECT ) ){
 		throw new Error( "invalid object" );
 	}
 
-	if( typeof object != "object" ){
-		throw new Error( "invalid object" );
-	}
-
-	return ( object !== null &&
-
-		Object.keys( object ).length != 0 &&
-
-		JSON.stringify( object ) != JSON.stringify( { } ) &&
-
-		Object.getOwnPropertyNames( object )
-			.filter( function onEachProperty( property ){
-				let descriptor = Object.getOwnPropertyDescriptor( object, property ) || { };
-
-				return !!descriptor.enumerable;
-			} ).length != 0 );
+	return ( truly( object ) && kount( object ) != 0 );
 };
 
-if( typeof module != "undefined" ){
-	module.exports = stuffed;
-}
+module.exports = stuffed;
