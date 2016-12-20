@@ -34,6 +34,9 @@
 			"file": "stuffed.js",
 			"module": "stuffed",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/stuffed.git",
 			"test": "stuffed-test.js",
@@ -77,3 +80,5 @@ const stuffed = function stuffed( object ){
 };
 
 module.exports = stuffed;
+
+console.log( stuffed( { "name": "simple" } ) );
