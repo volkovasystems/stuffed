@@ -58,25 +58,25 @@
 	@end-include
 */
 
-const doubt = require( "doubt" );
-const kount = require( "kount" );
-const protype = require( "protype" );
-const truly = require( "truly" );
+var doubt = require("doubt");
+var kount = require("kount");
+var protype = require("protype");
+var truly = require("truly");
 
-const stuffed = function stuffed( object ){
+var stuffed = function stuffed(object) {
 	/*;
-		@meta-configuration:
-			{
-				"object:required": "object"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"object:required": "object"
+ 		}
+ 	@end-meta-configuration
+ */
 
-	if( doubt( object ).AS_ARRAY || !protype( object, OBJECT ) ){
-		throw new Error( "invalid object" );
+	if (doubt(object).AS_ARRAY || !protype(object, OBJECT)) {
+		throw new Error("invalid object");
 	}
 
-	return ( truly( object ) && kount( object ) != 0 );
+	return truly(object) && kount(object) != 0;
 };
 
 module.exports = stuffed;
