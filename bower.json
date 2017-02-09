@@ -22,5 +22,9 @@
     "tests"
   ],
   "dependencies": {
+    "doubt": "^0.11.0",
+    "kount": "^0.7.0",
+    "protype": "^0.15.0",
+    "truly": "^0.11.0"
   }
 }
