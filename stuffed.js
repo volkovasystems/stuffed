@@ -72,7 +72,7 @@ const stuffed = function stuffed( object ){
 		@end-meta-configuration
 	*/
 
-	if( doubt( object, AS_ARRAY ) || !protype( object, OBJECT ) ){
+	if( !protype( object, OBJECT ) || doubt( object, AS_ARRAY ) ){
 		throw new Error( "invalid object" );
 	}
 
