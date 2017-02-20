@@ -18,4 +18,5 @@ doubt \
 kount \
 protype \
 truly \
---save
+--save \
+--force-latest
