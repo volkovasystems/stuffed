@@ -1,7 +1,8 @@
 "use strict";
 
+const assert = require( "assert" );
 const stuffed = require( "./stuffed.js" );
 
-console.log( stuffed( { "name": "simple" } ) );
-console.log( stuffed( { } ) );
-console.log( stuffed( ) );
+assert.equal( stuffed( { "name": "simple" } ), true, "should be true" );
+assert.equal( stuffed( { } ), false, "should be false" );
+console.log( "ok" );
