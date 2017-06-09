@@ -1,8 +1,34 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<script
-			type="application/javascript"
-			src="./stuffed.deploy.js">
-		</script>
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Stuffed QUnit Example</title>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+	<script type="application/javascript" src="./stuffed.deploy.js"></script>
+</head>
+
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script>
+		QUnit.test("equal test", function (assert) {
+			assert.equal(stuffed({ "name": "simple" }), true, "should be true");
+			
+			assert.equal(stuffed({}), false, "should be false");
+
+			let Guest = {};
+			Guest.addGuest = function addGuest(name) {
+				console.log(name);
+			};
+
+			assert.equal(stuffed(Guest), true, "should  be true");
+
+			assert.equal(stuffed({ "data": [1, 2, 3] }), true, "should be true");
+		});
+	</script>
+</body>
+
 </html>
