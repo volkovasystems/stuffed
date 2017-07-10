@@ -60,7 +60,6 @@
 
 var doubt = require("doubt");
 var kount = require("kount");
-var protype = require("protype");
 var truly = require("truly");
 
 var stuffed = function stuffed(object) {
