@@ -1,12 +1,13 @@
 {
   "name": "stuffed",
-  "version": "0.23.0",
+  "version": "0.26.0",
   "description": "Check if object contains something.",
   "main": "stuffed.deploy.js",
   "support": "stuffed.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -23,9 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.27.0",
+    "doubt": "^0.30.0",
     "kount": "^0.11.0",
-    "protype": "^0.22.0",
     "truly": "^0.19.0"
   }
 }

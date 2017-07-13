@@ -34,10 +34,11 @@
 			"file": "stuffed.js",
 			"module": "stuffed",
 			"author": "Richeve S. Bebedor",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-			],
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
+			],
 			"repository": "https://github.com/volkovasystems/stuffed.git",
 			"test": "stuffed-test.js",
 			"global": true
@@ -52,7 +53,6 @@
 		{
 			"doubt": "doubt",
 			"kount": "kount",
-			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
@@ -60,7 +60,6 @@
 
 const doubt = require( "doubt" );
 const kount = require( "kount" );
-const protype = require( "protype" );
 const truly = require( "truly" );
 
 const stuffed = function stuffed( object ){
@@ -72,7 +71,7 @@ const stuffed = function stuffed( object ){
 		@end-meta-configuration
 	*/
 
-	if( !protype( object, OBJECT ) || doubt( object, AS_ARRAY ) ){
+	if( typeof object != "object" || doubt( object, AS_ARRAY ) ){
 		throw new Error( "invalid object" );
 	}
 
