@@ -1,31 +1,31 @@
 {
-  "name": "stuffed",
-  "version": "0.26.0",
-  "description": "Check if object contains something.",
-  "main": "stuffed.deploy.js",
-  "support": "stuffed.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "check",
-    "object",
-    "stuffed"
-  ],
-  "homepage": "https://github.com/volkovasystems/stuffed",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "doubt": "^0.30.0",
-    "kount": "^0.11.0",
-    "truly": "^0.19.0"
-  }
+	"name": "stuffed",
+	"version": "0.27.0",
+	"description": "Check if object contains something.",
+	"main": "stuffed.deploy.js",
+	"support": "stuffed.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"check",
+		"object",
+		"stuffed"
+	],
+	"homepage": "https://github.com/volkovasystems/stuffed",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"doubt": "^0.34.0",
+		"kount": "^0.12.0",
+		"truly": "^0.20.0"
+	}
 }
