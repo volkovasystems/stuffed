@@ -122,6 +122,8 @@ describe( "stuffed", ( ) => {
 
 describe( "stuffed", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
 	describe( "`stuffed( { 'name': 'simple' } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
