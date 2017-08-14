@@ -78,6 +78,7 @@ describe( "stuffed", ( ) => {
 		} );
 	} );
 
+
 	describe( "`stuffed( { } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
 
@@ -94,6 +95,24 @@ describe( "stuffed", ( ) => {
 //: @client:
 
 describe( "stuffed", ( ) => {
+
+	describe( "`stuffed( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( stuffed( { "name": "simple" } ), true );
+
+		} );
+	} );
+
+
+	describe( "`stuffed( { } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( stuffed( { } ), false );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -102,6 +121,40 @@ describe( "stuffed", ( ) => {
 //: @bridge:
 
 describe( "stuffed", ( ) => {
+
+	describe( "`stuffed( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return stuffed( { "name": "simple" } );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+
+	describe( "`stuffed( { } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return stuffed( { } );
+				}
+
+			).value;
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
