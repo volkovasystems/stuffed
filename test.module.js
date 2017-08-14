@@ -30,9 +30,9 @@
 	@test-configuration:
 		{
 			"package": "stuffed",
-			"path": "stuffed/test.stuffed.js",
-			"file": "test.stuffed.js",
-			"stuffed": "test",
+			"path": "stuffed/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/stuffed.git"
@@ -69,6 +69,23 @@ const path = require( "path" );
 //: @server:
 
 describe( "stuffed", ( ) => {
+
+	describe( "`stuffed( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( stuffed( { "name": "simple" } ), true );
+
+		} );
+	} );
+
+	describe( "`stuffed( { } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( stuffed( { } ), false );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
