@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-14T04:49:06.346Z",
+	"end": "2017-08-14T04:49:49.981Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "stuffed",
+			"duration": 0,
+			"start": "2017-08-14T04:49:49.652Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "stuffed",
+			"duration": 145,
+			"start": "2017-08-14T04:49:49.652Z",
+			"end": "2017-08-14T04:49:49.797Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-14T04:49:49.653Z",
+					"end": "2017-08-14T04:49:49.654Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "stuffed",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-14T04:49:49.749Z",
+					"end": "2017-08-14T04:49:49.749Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "stuffed",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-14T04:49:49.750Z",
+					"end": "2017-08-14T04:49:49.750Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "stuffed",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-14T04:49:49.796Z",
+					"end": "2017-08-14T04:49:49.796Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "stuffed",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-14T04:49:49.797Z",
+					"end": "2017-08-14T04:49:49.797Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "stuffed"
+				}
+			]
+		},
+		{
+			"name": "`stuffed( { 'name': 'simple' } )`",
+			"duration": 98,
+			"start": "2017-08-14T04:49:49.652Z",
+			"end": "2017-08-14T04:49:49.750Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-14T04:49:49.653Z",
+					"end": "2017-08-14T04:49:49.749Z",
+					"duration": 96,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`stuffed( { } )`",
+			"duration": 47,
+			"start": "2017-08-14T04:49:49.750Z",
+			"end": "2017-08-14T04:49:49.797Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-14T04:49:49.750Z",
+					"end": "2017-08-14T04:49:49.796Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

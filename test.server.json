@@ -1,16 +1,46 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T06:48:53.307Z",
-    "end": "2017-08-10T06:48:53.308Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-14T04:49:05.270Z",
+		"end": "2017-08-14T04:49:05.275Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "stuffed `stuffed( { 'name': 'simple' } )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "stuffed `stuffed( { } )` should be equal to false",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "stuffed `stuffed( { 'name': 'simple' } )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "stuffed `stuffed( { } )` should be equal to false",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
