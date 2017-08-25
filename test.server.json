@@ -5,22 +5,22 @@
 		"passes": 2,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-14T05:05:48.447Z",
-		"end": "2017-08-14T05:05:48.452Z",
-		"duration": 5
+		"start": "2017-08-25T02:50:06.227Z",
+		"end": "2017-08-25T02:50:06.233Z",
+		"duration": 6
 	},
 	"tests": [
 		{
 			"title": "should be equal to true",
 			"fullTitle": "stuffed `stuffed( { 'name': 'simple' } )` should be equal to true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to false",
 			"fullTitle": "stuffed `stuffed( { } )` should be equal to false",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -31,14 +31,14 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "stuffed `stuffed( { 'name': 'simple' } )` should be equal to true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to false",
 			"fullTitle": "stuffed `stuffed( { } )` should be equal to false",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
